@@ -8,7 +8,7 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is the title of your project?",
+        message: "What is your project's name?",
     },
     {
         type: "input",
@@ -18,12 +18,13 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "What does the installation process entail?",
+        message: "What command should be run to install dependencies?",
+        default: "npm i",
     },
     {
         type: "input",
         name: "usage",
-        message: "What is the usage?",
+        message: "What does the user need to know about using the repo?",
     },
     {
         type: "list",
@@ -33,13 +34,14 @@ const questions = [
     },
     {
         type: "input",
-        name: "collaborators",
-        message: "Who were your collaborators on this project?",
+        name: "contribute",
+        message: "What does the user need to know about contributing to the repo?",
     },
     {
         type: "input",
         name: "test",
-        message: "Provide test instructions if any.",
+        message: "What command should be run to run tests?",
+        default: "npm test",
     },
     {
         type: "input",
